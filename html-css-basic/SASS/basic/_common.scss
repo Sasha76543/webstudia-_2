@@ -1,0 +1,54 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidde;
+}
+ul,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+p,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a {
+  list-style: none;
+}
+ul {
+  list-style: none;
+}
+
+.footer-email {
+  margin-right: 12px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+.container {
+  width: 1600px;
+
+  margin: 0 auto;
+}
