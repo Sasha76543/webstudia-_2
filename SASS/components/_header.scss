@@ -23,7 +23,7 @@
 }
 
 .header-span-web {
-  color: #2196f3;
+  @extend %color;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -33,7 +33,7 @@
 }
 
 .header-span-studio {
-  color: #000;
+  @extend %black;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -60,7 +60,8 @@
   height: 4px;
   flex-shrink: 0;
   border-radius: 2px;
-  background: #2196f3;
+  // background-color: #2196f3;
+  @extend %background-color;
   transition: all 0.5s;
 }
 
@@ -76,12 +77,11 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
-  position: relative;
-  color: #212121;
+  @extend %black;
 }
 
 .header-nav-link:hover {
-  color: #2196f3;
+  @extend %color;
 }
 
 .header-right {
@@ -99,7 +99,7 @@
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
-  color: #757575;
+  @extend %color1;
 }
 
 .header-contact-email:hover {
@@ -110,7 +110,7 @@
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
-  color: #2196f3;
+  @extend %color;
 }
 
 .header-contact-email {
@@ -120,7 +120,7 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  @extend %color1;
 }
 
 .header-contact-email:hover {
@@ -131,5 +131,5 @@
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
-  color: #2196f3;
+  @extend %color;
 }
