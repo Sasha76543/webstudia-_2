@@ -14,10 +14,8 @@
 
 .main-hero-h1 {
   @extend %white;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+  @extend %text-roboto;
   font-size: 44px;
-  font-style: normal;
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 2.64px;
@@ -34,13 +32,9 @@
   @extend %background-color;
   @extend %box-shadov;
   @extend %white;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
+  @extend %text-roboto;
+  @extend %button;
   line-height: 1.88;
-  letter-spacing: 0.96px;
   border: none;
 } /*переваги*/
 .features {
@@ -48,8 +42,7 @@
 }
 
 .main-features {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex;
 }
 
 .main-features-item {
@@ -65,45 +58,37 @@
   margin-bottom: 30px;
 }
 .m .features-subtitla {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
+  @extend %text-roboto;
+  @extend %button;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
   @extend %black;
+  line-height: normal;
 }
 
 .main-features-paragraf {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  @extend %color1;
+  letter-spacing: 0.42px;
 }
 
 /*robota*/
 .main-section-robota {
-  text-align: center;
+  @extend %flex;
   margin-bottom: 94px;
-  justify-content: center;
-  text-align: center;
   width: 1600px;
 }
 
 .robota-h2 {
-  font-family: "Roboto";
-  font-style: normal;
+  @extend %text-roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  text-align: center;
   @extend %black;
 }
 
@@ -118,7 +103,7 @@
 .robota-thumb {
   margin: 10px;
   border-radius: 4px;
-  background-color: #fff;
+  @extend %white;
   position: relative;
   margin-top: 118px;
 }
@@ -132,11 +117,9 @@
   padding: 27px;
   @extend %img-color;
   @extend %white;
-  text-align: center;
-  font-family: Roboto;
+  @extend %text-roboto;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
+  @include font-weight;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
@@ -144,7 +127,7 @@
 
 .main-section-comanda {
   flex-shrink: 0;
-  @extend %white;
+  @extend %comanda;
   height: 708px;
   width: 1600px;
   border-radius: [object Object] px;
@@ -154,19 +137,16 @@
 }
 
 .comanda-h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
+  @extend %text-roboto;
+  @include font-weight;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  @exte;
 }
 
 .comanda-portfolio {
-  display: flex;
-  text-align: center;
+  @extend %flex;
 }
 
 .portfolio-li-people {
@@ -177,27 +157,28 @@
   height: 428px;
   flex-shrink: 0;
   border-radius: 0px 0px 4px 4px;
-  @extend %white;
+  @extend %white-background;
   margin-right: 30px;
 }
 .li-p-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  @extend %black;
 }
 .li-p-profesiy {
+  @extend %color1;
 }
 .main-comanda-ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex;
 }
 .client-h2 {
-  text-align: center;
+  @extend %text-roboto;
   margin-top: 94px;
   margin-bottom: 50px;
 }
 
 .client-ul {
-  display: flex;
-  text-align: center;
+  @extend %flex;
   margin-left: 215px;
 }
 
@@ -227,7 +208,7 @@
 }
 
 .footer {
-  @extend %blue-grey;
+  @extend %footer;
   padding: 60px 215px 60px;
   max-width: 1600px;
   max-height: 252px;
@@ -237,8 +218,8 @@
   @extend %white;
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
+  @extend %text-roboto;
+  @include font-weight;
   line-height: normal;
   letter-spacing: 0.78px;
 }
@@ -248,9 +229,8 @@
   height: 21px;
   flex-shrink: 0;
   @extend %white;
-  font-family: Roboto;
+  @extend %text-roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
@@ -258,8 +238,7 @@
 }
 
 .footer-a-email {
-  font-family: "Roboto";
-  font-style: normal;
+  @extend %text-roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -274,9 +253,8 @@
   height: 21px;
   flex-shrink: 0;
   @extend %white-grey;
-  font-family: Roboto;
+  @extend %text-roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
@@ -304,13 +282,9 @@
   @extend %background-color;
   @extend %box-shadov;
   @extend %white;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
+  @extend %text-roboto;
   line-height: 30px; /* 187.5% */
-  letter-spacing: 0.96px;
+  @extend %button;
 }
 
 .subscrib-bth:hover,
