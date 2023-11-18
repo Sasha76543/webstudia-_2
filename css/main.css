@@ -643,7 +643,53 @@ body {
     height: 3225px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 480px) {
+  .features-div2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .features-div1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-features {
+    display: none;
+  }
+  .main-hero-btn {
+    color: #fff;
+
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+  }
+  .main-hero-h1 {
+    width: 360px;
+    color: #fff;
+
+    text-align: center;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px; /* 161.538% */
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+  .main-section-comanda {
+    width: 480px;
+    height: 2761px;
+  }
+  .portfolio-li-people {
+    width: 450px;
+    height: 622px;
+  }
+  .comanda-portfolio {
+    display: none;
+  }
   .features content-container {
     width: 425px;
   }
@@ -668,8 +714,8 @@ body {
     text-transform: uppercase;
   }
   .container {
-    width: 425px;
-    height: 603px;
+    width: 480px;
+    height: 5457px;
   }
   .main-hero {
     background-image: linear-gradient(
@@ -677,7 +723,7 @@ body {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("foto/Header imgtelefohero.png");
+      url("../foto/Header\ imgtelefohero.png");
     width: 4425pxpx;
     height: 400px;
   }
